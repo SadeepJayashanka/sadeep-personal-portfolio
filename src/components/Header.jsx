@@ -3,6 +3,12 @@
  * @license Apache-2.0
  */
 
+/**
+ *
+ * Components
+ */
+import Navbar from "./Navbar";
+
 const Header = () => {
   return (
     <header
@@ -29,7 +35,8 @@ const Header = () => {
           <button className="menu-btn md:hidden" onClick={null}>
             <span className="material-symbols-rounded">menu</span>
           </button>
-          Navbar
+
+          <Navbar />
         </div>
         <a href="#contact" className="">
           Contact Me
