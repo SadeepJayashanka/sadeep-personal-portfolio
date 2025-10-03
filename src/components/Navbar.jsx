@@ -6,12 +6,19 @@
 /**
  * Node modules
  */
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
   const lastActiveLink = useRef();
   const activeBox = useRef();
+
+  const initActiveBox = () => {
+    console.log(lastActiveLink.current);
+  };
+
+  useEffect(initActiveBox, []);
+
   const navItems = [
     {
       label: "Home",
