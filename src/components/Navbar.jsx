@@ -48,7 +48,7 @@ const Navbar = ({ navOpen }) => {
     },
   ];
   return (
-    <nav className={"navbar" + (navOpen ? "active:" : "")}>
+    <nav className={`navbar ${navOpen ? "active" : ""}`}>
       {navItems.map(({ label, link, className, ref }, key) => (
         <a href={link} key={key} ref={ref} className={className} onClick={null}>
           {label}
@@ -59,7 +59,7 @@ const Navbar = ({ navOpen }) => {
   );
 };
 
-Navbar.PropTypes = {
+Navbar.propTypes = {
   navOpen: PropTypes.bool.isRequired,
 };
 export default Navbar;
