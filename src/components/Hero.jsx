@@ -21,8 +21,26 @@ const Hero = () => {
                 className="img-cover"
               />
             </figure>
-            "
+            <div className="">
+              <span className="">
+                <span className=""></span>
+              </span>
+              Available for work
+            </div>
           </div>
+          <h2 className="">Building Scalable Modern Websites for the Future</h2>
+          <div className="">ButtonPrimary ButtonOutline</div>
+        </div>
+        <div className="">
+          <figure className="">
+            <img
+              src="/images/hero-banner.png"
+              width={656}
+              height={800}
+              alt="Sadeep Jayashanka"
+              className="w-full"
+            />
+          </figure>
         </div>
       </div>
     </section>
