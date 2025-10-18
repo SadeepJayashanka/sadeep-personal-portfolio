@@ -24,7 +24,7 @@ const SkillCard = ({ imgSrc, label, desc, classes }) => {
       <div>
         <h3>{label}</h3>
 
-        <p className="">{desc}</p>
+        <p className="text-zinc-400 text-sm">{desc}</p>
       </div>
     </div>
   );
