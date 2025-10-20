@@ -81,14 +81,75 @@ const socialLinks = [
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <div className="container">
-        <div className="">
+      <div
+        className="container lg:grid lg:grid-cols-2 
+      lg:items-stretch"
+      >
+        <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
           <h2 className="headline-2">Contact me for collaboration</h2>
           <p className="">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
+          <div className="">
+            {socialLinks.map(({ href, icon }, key) => (
+              <a key={key} href={href} target="_blank" className="">
+                {icon}
+              </a>
+            ))}
+          </div>
         </div>
+        <form action="" method="POST" className="">
+          <div className="">
+            <div className="">
+              <label htmlFor="name" className="label">
+                Name
+              </label>
+
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autoComplete="name"
+                required
+                placeholder="Sadeep Jayashanka"
+                className="text-field"
+              />
+            </div>
+
+            <div className="">
+              <label htmlFor="email" className="label">
+                Email
+              </label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+                required
+                placeholder="Sadeep@example.com"
+                className="text-field"
+              />
+            </div>
+          </div>
+          <div className="">
+            <label htmlFor="message" className="message">
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Hi!"
+              required
+              className="text-field"
+            ></textarea>
+          </div>
+
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
       </div>
     </section>
   );
