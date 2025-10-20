@@ -109,7 +109,11 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+        <form
+          action="https://getform.io/f/apjzkmya"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
           <div
             className="md:grid md:items-center 
           md:grid-cols-2 md:gap-2"
