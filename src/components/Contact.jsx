@@ -109,9 +109,12 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <form action="" method="POST" className="">
-          <div className="">
-            <div className="">
+        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+          <div
+            className="md:grid md:items-center 
+          md:grid-cols-2 md:gap-2"
+          >
+            <div className="mb-4">
               <label htmlFor="name" className="label">
                 Name
               </label>
