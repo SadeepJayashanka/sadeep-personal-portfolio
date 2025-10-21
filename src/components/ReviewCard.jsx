@@ -10,8 +10,6 @@ ratings.fill({
   style: { fontVariationSettings: '"FILL" 1  ' },
 });
 
-console.log(ratings);
-
 const ReviewCard = ({ content, imgSrc, name, company }) => {
   return (
     <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] flex flex-col lg:main-w-[420px]">
