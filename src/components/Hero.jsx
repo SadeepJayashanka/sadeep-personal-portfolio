@@ -60,9 +60,9 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="hidden lg:block">
+        <div className="mt-10 lg:mt-0">
           <figure
-            className="w-full max-w-[480px] ml-auto
+            className="w-full max-w-[420px] lg:max-w-[480px] mx-auto lg:ml-auto
           bg-gradient-to-t from-sky-400 via-25% via-sky-400/40
            to-65% rounded-[60px] overflow-hidden"
           >
