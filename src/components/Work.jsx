@@ -10,40 +10,19 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "https://musify-5al0.onrender.com/",
+    title: "Secure Task Management System",
+    tags: ["Next.js", "TypeScript", "Express.js", "MySQL", "JWT", "RBAC"],
+    projectLink: "https://github.com/SadeepJayashanka/task-management-system",
   },
   {
-    imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "https://pixstock-official.vercel.app/",
+    title: "Emergency Hospital Admission System",
+    tags: ["Flutter", "Firebase", "Google Maps API", "Mobile"],
+    projectLink: "https://github.com/SadeepJayashanka/patient_mobile_app",
   },
   {
-    imgSrc: "/images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["Development", "API"],
-    projectLink: "",
-  },
-  {
-    imgSrc: "/images/project-4.jpg",
-    title: "Real state website",
-    tags: ["Web-design", "Development"],
-    projectLink: "https://github.com/codewithsadee-org/wealthome",
-  },
-  {
-    imgSrc: "/images/project-5.jpg",
-    title: "eCommerce website",
-    tags: ["eCommerce", "Development"],
-    projectLink: "https://github.com/codewithsadee/anon-ecommerce-website",
-  },
-  {
-    imgSrc: "/images/project-6.jpg",
-    title: "vCard Personal portfolio",
-    tags: ["Web-design", "Development"],
-    projectLink: "https://github.com/codewithsadee/vcard-personal-portfolio",
+    title: "Library Management System",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    projectLink: "https://github.com/Plymouth-University/coursework-group_35",
   },
 ];
 
@@ -56,10 +35,9 @@ const Work = () => {
           className="grid gap-x-4 gap-y-5 grid-cols-
         [repeat(auto-fill,_minmax(280px,_1fr))]"
         >
-          {works.map(({ imgSrc, title, tags, projectLink }, key) => (
+          {works.map(({ title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
-              imgSrc={imgSrc}
               title={title}
               tags={tags}
               projectLink={projectLink}

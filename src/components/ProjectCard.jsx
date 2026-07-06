@@ -8,20 +8,23 @@
  */
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
+const ProjectCard = ({ title, tags, projectLink, classes }) => {
   return (
     <div
       className={
-        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors" +
+        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " +
         classes
       }
     >
-      <figure
-        className="img-box aspect-square rounded-lg
-      mb-4"
+      {/* Placeholder banner instead of image */}
+      <div
+        className="w-full aspect-video rounded-lg mb-4 flex items-center justify-center
+        bg-gradient-to-br from-sky-400/20 via-zinc-700 to-zinc-800 border border-zinc-700"
       >
-        <img src={imgSrc} alt={title} loading="lazy" className="img-cover" />
-      </figure>
+        <span className="material-symbols-rounded text-sky-400 text-5xl opacity-40">
+          code
+        </span>
+      </div>
 
       <div
         className="flex items-center justify-between
@@ -55,7 +58,6 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
 };
 
 ProjectCard.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   projectLink: PropTypes.string,

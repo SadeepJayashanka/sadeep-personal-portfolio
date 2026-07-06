@@ -7,7 +7,7 @@
  * Components
  */
 
-import { ButtonPrimary, ButtonOutline } from "./Button";
+import { ButtonOutline } from "./Button";
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
                 src="/images/avatar-1.jpg"
                 width={40}
                 height={40}
-                alt="Sadeep Jayashanka protrait"
+                alt="Sadeep Jayashanka portrait"
                 className="img-cover"
               />
             </figure>
@@ -32,7 +32,7 @@ const Hero = () => {
             text-zinc-400 text-sm tracking-wide"
             >
               <span
-                className="relative w-2 h-2 
+                className="relative w-2 h-2
               rounded-full bg-emerald-400"
               >
                 <span
@@ -48,10 +48,20 @@ const Hero = () => {
             className="headline-1 max-w-[15ch] sm:max-w-
           [20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10"
           >
-            Building Scalable Modern Websites for the Future
+            Full-Stack · DevOps · Mobile · Software Engineer
           </h2>
+
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />
+            <a
+              href="/Sadeep_Jayashanka_CV.pdf"
+              download="Sadeep_Jayashanka_CV.pdf"
+              className="btn btn-primary"
+            >
+              Download CV
+              <span className="material-symbols-rounded" aria-hidden="true">
+                download
+              </span>
+            </a>
             <ButtonOutline
               href="#about"
               label="Scroll down"

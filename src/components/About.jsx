@@ -4,11 +4,8 @@
  */
 
 const AboutItems = [
-  { label: "Project done", number: 45 },
-  {
-    label: "Year of experience",
-    number: 10,
-  },
+  { label: "Projects completed", number: 3 },
+  { label: "Current role", number: null, badge: "Intern" },
 ];
 
 const About = () => {
@@ -23,33 +20,45 @@ const About = () => {
             className="text-zinc-300 mb-4 md:mb-8
           md:text-xl md:max-w-[60ch]"
           >
-            Welcome! I&apos;m Sadeep Jayashanka, a professional web developer
-            with a knack for crafting visually stunning and high functional
-            websites. Combining creativity and technical expertise. I transform
-            your vision into digital masterpice that excels in both appearance
-            and performance.
+            I&apos;m Sadeep Jayashanka, a Software Engineering graduate from
+            NSBM Green University (affiliated with the University of Plymouth,
+            UK), specialising in Full-Stack Web Development. I build scalable,
+            high-performance web and mobile applications using Node.js, Next.js,
+            React, Flutter, and MongoDB — with a strong focus on clean
+            architecture, API-driven development, and enterprise-grade security.
           </p>
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
-            {AboutItems.map(({ label, number }, key) => (
+            {AboutItems.map(({ label, number, badge }, key) => (
               <div key={key}>
                 <div
                   className="flex items-center
                 md:mb-2"
                 >
-                  <span
-                    className="text-2xl font-semibold
-                  md:text-4xl"
-                  >
-                    {number}
-                  </span>
-                  <span
-                    className="text-sky-400
-                  font-semibold md:text-3xl"
-                  >
-                    +
-                  </span>
+                  {number !== null ? (
+                    <>
+                      <span
+                        className="text-2xl font-semibold
+                      md:text-4xl"
+                      >
+                        {number}
+                      </span>
+                      <span
+                        className="text-sky-400
+                      font-semibold md:text-3xl"
+                      >
+                        +
+                      </span>
+                    </>
+                  ) : (
+                    <span
+                      className="text-sm font-semibold px-3 py-1
+                    bg-sky-400/20 text-sky-400 rounded-full border border-sky-400/30"
+                    >
+                      {badge}
+                    </span>
+                  )}
                 </div>
-                <p className="text-sm text-zinc-400">{label}</p>
+                <p className="text-sm text-zinc-400 mt-1">{label}</p>
               </div>
             ))}
             <img

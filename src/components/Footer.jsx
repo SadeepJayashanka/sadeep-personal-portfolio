@@ -39,19 +39,11 @@ const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/sadeep-jayashanka-8b0306257/",
+    href: "https://linkedin.com/in/sadeep-jayashanka",
   },
   {
-    label: "Twitter X",
-    href: "https://x.com/sadeep_jayshnka",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/sadeep_jayashanka?igsh=ZmN5NGs4czlrMDJk",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/Sadeep-Jayashanka",
+    label: "Gmail",
+    href: "mailto:jayashankasad@gmail.com",
   },
 ];
 
@@ -101,7 +93,8 @@ const Footer = () => {
                   <li key={key}>
                     <a
                       href={href}
-                      target="_blank"
+                      target={href.startsWith("mailto") ? "_self" : "_blank"}
+                      rel="noreferrer"
                       className="block text-sm
                      text-zinc-400 py-1 transition-colors
                      hover:text-zinc-200 reveal-up"
@@ -120,7 +113,7 @@ const Footer = () => {
             <img src="/images/logo.svg" width={40} height={40} alt="Logo" />
           </a>
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2025 <span className="text-zinc-200">Sadeep Jayashanka</span>
+            &copy; 2026 <span className="text-zinc-200">Sadeep Jayashanka</span>
           </p>
         </div>
       </div>
